@@ -34,18 +34,19 @@ html.menu-active,
 }
 
 body {
-	font: 400 2em / 1.5em 'Cardo', serif;
+	font: 400 1.75em / 1.5em 'Cardo', serif;
 	color: $color-blue-30;
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	overflow-x: hidden;
+	font-family: "Roboto", "Helvetica";
+	background-color: #f6f6f6;
 }
 input,
 button,
 select,
 textarea {
-	font-family: 'Fira Sans', sans-serif;
 	transition: all ease-out 0.2s;
 }
 
@@ -61,7 +62,6 @@ a:focus {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'Fira Sans', sans-serif;
 	text-rendering: optimizeLegibility;
 	color: $color-black;
 }
@@ -111,7 +111,6 @@ ol > li:before {
 	position: absolute;
 	width: 1.5em;
 	margin-left: -2em;
-	font-family: 'Fira Sans', sans-serif;
 	font-size: 1em;
 	font-weight: 500;
 	line-height: 1.5em;
@@ -290,7 +289,6 @@ table td {
     border: 1px solid $color-gray-90;
 }
 table th {
-	font-family: 'Fira Sans', sans-serif;
 	font-weight: 500;
 	font-size: 0.75em;
 	line-height: 1.25em;
@@ -411,7 +409,6 @@ img {
 	z-index: 10;
 	margin: 0;
 	padding: 0;
-	font-family: 'Fira Sans', sans-serif;
 	font-weight: 700;
 	font-size: 2em;
 	line-height: 1em;
@@ -467,7 +464,7 @@ img {
 
 
 .inner {
-	max-width: 32em;
+	max-width: 45em;
 	margin: 0 auto;
 	padding: 0 2em;
 }
@@ -495,7 +492,6 @@ img {
 	margin-bottom: 1em;
 	padding: 0.5em 1.25em;
 	border: 1px solid $color-blue-80;
-	font-family: 'Fira Sans', sans-serif;
 	font-size: 0.75em;
 	line-height: 1.667em;
 	text-shadow: none;
@@ -503,16 +499,22 @@ img {
 	cursor: pointer;
 	background: $color-white;
 	transition: color,border-color ease 0.3s;
-	border-radius: 2em;
+	border-radius: 1em;
 }
-.nav-button a:hover,
-.nav-button a:focus {
+
+.nav-button a {
 	color: $primary-color;
 	border-color: $primary-color;
 }
+
+.nav-button a:hover,
+.nav-button a:focus {
+	color: $color-black;
+	border-color: $color-black;
+}
 .cover-active .nav-button a {
-	color: $color-white;
-	border-color: rgba(255,255,255,0.5);
+	color: $primary-color;
+	border-color: $primary-color;
 	background: transparent;
 }
 .cover-active .nav-button a:hover,
@@ -544,7 +546,6 @@ img {
 	border-left: 1px solid $color-gray-90;
 	z-index: 400;
 	overflow: hidden;
-	font-family: 'Fira Sans', sans-serif;
 	box-shadow: inset -2px 0 7px rgba(0,0,0,0.1);
 	transform: translate3d(16em,0,0);
 	transition: all ease-out 0.25s;
@@ -700,7 +701,6 @@ img {
 #footer {
 	position: relative;
 	z-index: 20;
-	font-family: 'Fira Sans', sans-serif;
 	line-height: 1em;
 	padding-bottom: 6em;
 }
@@ -886,7 +886,6 @@ img {
 	z-index: 10;
 	display: block;
 	margin-bottom: 1.334em;
-	font-family: 'Fira Sans', sans-serif;
 	font-size: 0.75em;
 	font-weight: 400;
 	line-height: 1.334em;
@@ -977,7 +976,6 @@ img {
 .post-tags {
 	max-width: 75%;
 	float: left;
-	font-family: 'Fira Sans', sans-serif;
 }
 .post-tags a {
 	display: inline-block;
@@ -1039,7 +1037,6 @@ img {
 }
 .post-author-bio {
 	padding-left: 10em;
-	font-family: 'Fira Sans', sans-serif;
     font-size: 0.75em;
     line-height: 1.334em;
     
@@ -1102,7 +1099,6 @@ img {
 	margin: 0;
 	padding: 0.5em 1.25em;
 	border: 1px solid $color-blue-80;
-	font-family: 'Fira Sans', sans-serif;
 	font-size: 0.75em;
 	line-height: 1.334em;
 	color: $color-blue-60;
@@ -1267,7 +1263,6 @@ img {
 	height: 2em;
 	margin: 0;
 	padding: 2em 0;
-	font-family: 'Fira Sans', sans-serif;
 }
 .pagination:after {
 	position: absolute;

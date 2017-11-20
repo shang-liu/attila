@@ -3,9 +3,9 @@
 <header id="blog-header"{{#if tag.feature_image}} class="has-cover"{{else}}{{#if @blog.cover_image}} class="has-cover"{{/if}}{{/if}}>
 	<div class="inner">
 		<nav id="navigation">
-			{{#if @blog.logo}}
+			{{#if @blog.icon}}
 			<span class="blog-logo">
-				<a href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Blog Logo" /></a>
+				<a href="{{@blog.url}}"><img src="{{@blog.icon}}" alt="Blog Icon" /></a>
 			</span>
 			{{else}}
 			<span id="home-button" class="nav-button">
